@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Comics Database</title>
+    <link rel="stylesheet" href="css/site.css" />
+    <script src="site.js" asp-append-version="true"></script>
+</head>
+<body>
+    <h1>Comic CRUD</h1>
+    <h3>Add</h3>
+    <form action="javascript:void(0);" method="POST" onsubmit="javascript:addItem()">
+        <input type="text" id="add-title" placeholder="title">
+        <input type="text" id="add-ser" placeholder="series">
+        <input type="text" id="add-pub" placeholder="publisher">
+        <input type="text" id="add-issue" placeholder="issueNumber">
+        <input type="submit" value="Add">
+    </form>
+
+    <div id="editForm">
+        <h3>Edit</h3>
+        <form action="javascript:void(0);" onsubmit="javascript:updateItem()">
+            <input type="hidden" id="edit-id">
+            <input type="text" id="edit-title">
+            <input type="text" id="edit-ser">
+            <input type="text" id="edit-pub">
+            <input type="text" id="edit-issue">
+            <input type="submit" value="Save">
+            <a onclick="closeInput()" aria-label="Close">&#10006;</a>
+        </form>
+    </div>
+
+    <p id="counter"></p>
+
+    <table>
+        <tr>
+            <th>title</th>
+            <th>series</th>
+            <th>publisher</th>
+            <th>issueNumber</th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tbody id="comics"></tbody>
+    </table>
+    <script type="text/javascript">
+        getItems();
+    </script>
+</body>
+</html>
