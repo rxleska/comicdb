@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ComicDetailsModelStoreContainer" CdmEntityContainer="comicdatabaseEntities">
+    <EntitySetMapping Name="Comic">
+      <EntityTypeMapping TypeName="ComicDetailsModel.Comic">
+        <MappingFragment StoreEntitySet="Comic">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="series" ColumnName="series" />
+          <ScalarProperty Name="publisher" ColumnName="publisher" />
+          <ScalarProperty Name="issueNumber" ColumnName="issueNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

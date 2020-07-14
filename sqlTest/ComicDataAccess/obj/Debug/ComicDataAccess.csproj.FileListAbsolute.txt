@@ -1,0 +1,12 @@
+C:\Users\ryan\source\repos\comicdb\sqlTest\ComicDataAccess\bin\Debug\ComicDataAccess.dll.config
+C:\Users\ryan\source\repos\comicdb\sqlTest\ComicDataAccess\bin\Debug\ComicDataAccess.dll
+C:\Users\ryan\source\repos\comicdb\sqlTest\ComicDataAccess\bin\Debug\ComicDataAccess.pdb
+C:\Users\ryan\source\repos\comicdb\sqlTest\ComicDataAccess\bin\Debug\EntityFramework.dll
+C:\Users\ryan\source\repos\comicdb\sqlTest\ComicDataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ryan\source\repos\comicdb\sqlTest\ComicDataAccess\bin\Debug\EntityFramework.xml
+C:\Users\ryan\source\repos\comicdb\sqlTest\ComicDataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ryan\source\repos\comicdb\sqlTest\ComicDataAccess\obj\Debug\ComicDataAccess.csprojAssemblyReference.cache
+C:\Users\ryan\source\repos\comicdb\sqlTest\ComicDataAccess\obj\Debug\ComicDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\ryan\source\repos\comicdb\sqlTest\ComicDataAccess\obj\Debug\ComicDataAccess.csproj.CopyComplete
+C:\Users\ryan\source\repos\comicdb\sqlTest\ComicDataAccess\obj\Debug\ComicDataAccess.dll
+C:\Users\ryan\source\repos\comicdb\sqlTest\ComicDataAccess\obj\Debug\ComicDataAccess.pdb
