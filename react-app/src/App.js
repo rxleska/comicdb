@@ -1,9 +1,68 @@
 import React from "react";
 //import logo from './logo.svg';
 import "./App.css";
+import 'antd/dist/antd.css'
+import {Table, Tag, Space} from 'antd';
+
+//https://ant.design/components/table/#components-table-demo-head
 
 const apiUrl = "http://localhost:44343/api/Comic";
 var editIDs = []
+
+const columns = [
+  {
+    title: 'Title',
+    dataIndex: 'title',
+    key: 'title',
+    sorter: {
+      compare: (a, b) => compareByAlph(a.title, b.title),
+    },
+    sortDirections: ['descend', 'ascend'],
+    filterMultiple: false,
+  },
+  {
+    title: 'Series',
+    dataIndex: 'series',
+    key: 'series',
+    sorter: {
+      compare: (a, b) => compareByAlph(a.series, b.series),
+    },
+    sortDirections: ['descend', 'ascend'],
+    filterMultiple: false,
+  },
+  {
+    title: 'Publisher',
+    dataIndex: 'publisher',
+    key: 'publisher',
+    sorter: {
+      compare: (a, b) => compareByAlph(a.publisher, b.publisher),
+    },
+    sortDirections: ['descend', 'ascend'],
+    filterMultiple: false,
+  },
+  {
+    title: 'Issue Number',
+    dataIndex: 'issueNumber',
+    key: 'issueNumber',
+    sorter: {
+      compare: (a, b) => compareByAlph(a.issueNumber, b.issueNumber),
+    },
+    sortDirections: ['descend', 'ascend'],
+    filterMultiple: false,
+  },
+];
+
+function compareByAlph (a, b) { if (a > b) { return -1; } if (a < b) { return 1; } return 0; }
+const rowSelection = {
+  onChange: (selectedRowKeys, selectedRows) => {
+    console.log(`selectedRowKeys: ${selectedRowKeys}`, 'selectedRows: ', selectedRows);
+  },
+  getCheckboxProps: record => ({
+    disabled: record.name === 'Disabled User', // Column configuration not to be checked
+    name: record.name,
+  }),
+};
+
 
 class Comics extends React.Component {
 
@@ -301,11 +360,19 @@ class App extends React.Component {
           </div>
           <div class="Tabl">
             <Comics comics={this.state.comics} />
+            <br/>
+            <Table dataSource={this.state.comics} columns={columns} onChange={onChange} />;
           </div>
         </div>
       </div>
     );
   }
 }
+
+
+function onChange(pagination, filters, sorter, extra) {
+  console.log('params', pagination, filters, sorter, extra);
+}
+
 
 export default App;
