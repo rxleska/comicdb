@@ -7,7 +7,7 @@ import Add from './components/Add.js';
 import Edit from './components/Edit.js';
 //import {useAsync} from 'react-async';
 
-const apiUrl = "http://localhost:44343/api/Comic";
+const apiUrl = "http://localhost:43443/api/Comic";
 
 const columns = [
   {
@@ -99,7 +99,7 @@ function App() {
       .catch((err) => {
         console.log(err);
       })
-    }
+    }, []
   );
 
   const onSelectChange = selectedRowKeys => {

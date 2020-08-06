@@ -21,10 +21,23 @@ namespace ComicServices.Controllers
         }
         public Comic Get(int id)
         {
-            using(comicdatabaseEntities entities = new comicdatabaseEntities())
+            using (comicdatabaseEntities entities = new comicdatabaseEntities())
             {
                 return entities.Comic.FirstOrDefault(e => e.id == id);
             }
+        }
+        [Route("api/Comic/series/{usr}")]
+        public IEnumerable<Comic> Get(string usr)
+        {
+            using(comicdatabaseEntities entities = new comicdatabaseEntities())
+            {
+                var usrComics = 
+                    from Comic comic in entities.Comic 
+                    where comic.series.Equals(usr) 
+                    select comic;
+                return usrComics.ToList<Comic>();
+            }
+
         }
         public void Put(int id, [FromBody]Comic comic)
         {

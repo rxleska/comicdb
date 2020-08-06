@@ -1,0 +1,11 @@
+C:\Users\ryan\source\repos\comicdb\ComicDataAccess\bin\Debug\netcoreapp3.1\ComicDataAccess.deps.json
+C:\Users\ryan\source\repos\comicdb\ComicDataAccess\bin\Debug\netcoreapp3.1\ComicDataAccess.dll
+C:\Users\ryan\source\repos\comicdb\ComicDataAccess\obj\Debug\netcoreapp3.1\ComicDataAccess.csprojAssemblyReference.cache
+C:\Users\ryan\source\repos\comicdb\ComicDataAccess\obj\Debug\netcoreapp3.1\ComicDataAccess.AssemblyInfoInputs.cache
+C:\Users\ryan\source\repos\comicdb\ComicDataAccess\obj\Debug\netcoreapp3.1\ComicDataAccess.AssemblyInfo.cs
+C:\Users\ryan\source\repos\comicdb\ComicDataAccess\bin\Debug\netcoreapp3.1\ComicDataAccess.runtimeconfig.json
+C:\Users\ryan\source\repos\comicdb\ComicDataAccess\bin\Debug\netcoreapp3.1\ComicDataAccess.runtimeconfig.dev.json
+C:\Users\ryan\source\repos\comicdb\ComicDataAccess\bin\Debug\netcoreapp3.1\ComicDataAccess.pdb
+C:\Users\ryan\source\repos\comicdb\ComicDataAccess\obj\Debug\netcoreapp3.1\ComicDataAccess.dll
+C:\Users\ryan\source\repos\comicdb\ComicDataAccess\obj\Debug\netcoreapp3.1\ComicDataAccess.pdb
+C:\Users\ryan\source\repos\comicdb\ComicDataAccess\obj\Debug\netcoreapp3.1\ComicDataAccess.genruntimeconfig.cache

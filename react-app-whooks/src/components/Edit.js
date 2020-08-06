@@ -4,7 +4,7 @@ import '../App.js'
 //import App from '../App.js';
 import {Button, Form, Input} from 'antd';
 
-const apiUrl = "http://localhost:44343/api/Comic";
+const apiUrl = "http://localhost:43443/api/Comic";
 
 const comicEntry = {
     id: 0,
@@ -75,7 +75,7 @@ function Edit(comicInfo) {
         comicEntry.title = (comicInfo.title);
         comicEntry.series = (comicInfo.series);
         comicEntry.publisher = (comicInfo.publisher);
-        comicEntry.issueNumber = (comicInfo.issueNumber);
+        comicEntry.issueNumber = parseInt(comicInfo.issueNumber);
 
         return (
         //onCancel={() => setEditPopup(false)}
@@ -83,7 +83,7 @@ function Edit(comicInfo) {
                     <Form.Item label="Title" name="title" rules={[{ required: true, message: 'missing Title:' }]} initialValue={comicEntry.title} ><Input /></Form.Item>
                     <Form.Item label="Series" name="series" rules={[{ required: true, message: 'missing Series:' }]} initialValue={comicEntry.series} ><Input /></Form.Item>
                     <Form.Item label="Publisher" name="publisher" rules={[{ required: true, message: 'missing Publisher:' }]} initialValue={comicEntry.publisher} ><Input /></Form.Item>
-                    <Form.Item label="IssueNumber" name="issueNumber" rules={[{ required: true, message: 'missing Issue Number:' }]} initialValue={comicEntry.issueNumber}><Input /></Form.Item>
+                    <Form.Item label="IssueNumber" name="issueNumber" type="number" rules={[{ required: true, message: 'missing Issue Number:' }]} initialValue={comicEntry.issueNumber}><Input /></Form.Item>
                     <Form.Item {...tailLayout}><Button type="primary" htmlType="submit" >Save</Button></Form.Item>
                 </Form>
         )

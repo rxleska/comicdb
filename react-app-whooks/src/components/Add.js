@@ -4,13 +4,13 @@ import '../App.js'
 //import App from '../App.js';
 import {Button, Form, Input, Modal} from 'antd';
 
-const apiUrl = "http://localhost:44343/api/Comic";
+const apiUrl = "http://localhost:43443/api/Comic";
 
 const comicEntry = {
     title: "",
     series: "",
     publisher: "",
-    issueNumber: ""
+    issueNumber: 0
 }
 
 
@@ -55,7 +55,7 @@ function Add()  {
         .then((response) => {
             console.log(response);
         })
-        .then(() => comicEntry.title = "", comicEntry.series = "", comicEntry.publisher = "", comicEntry.issueNumber = ""
+        .then(() => comicEntry.title = "", comicEntry.series = "", comicEntry.publisher = "", comicEntry.issueNumber = 0
         )
         .catch((err) => {
             console.log(err);
@@ -71,7 +71,7 @@ function Add()  {
         comicEntry.title = (values.title);
         comicEntry.series = (values.series);
         comicEntry.publisher = (values.publisher);
-        comicEntry.issueNumber = (values.issueNumber);
+        comicEntry.issueNumber = parseInt(values.issueNumber);
         addComic();
         onReset();
     }
@@ -88,7 +88,7 @@ function Add()  {
                         <Form.Item label="Title" name="title" rules={[{ required: true, message: 'missing Title:' }]} initialValue={""} ><Input /></Form.Item>
                         <Form.Item label="Series" name="series" rules={[{ required: true, message: 'missing Series:' }]} initialValue={""} ><Input /></Form.Item>
                         <Form.Item label="Publisher" name="publisher" rules={[{ required: true, message: 'missing Publisher:' }]} initialValue={""} ><Input /></Form.Item>
-                        <Form.Item label="IssueNumber" name="issueNumber" rules={[{ required: true, message: 'missing Issue Number:' }]} initialValue={""}><Input /></Form.Item>
+                        <Form.Item label="IssueNumber" name="issueNumber" type="number" rules={[{ required: true, message: 'missing Issue Number:' }]} initialValue={""}><Input /></Form.Item>
                         <Form.Item {...tailLayout}><Button type="primary" htmlType="submit" >Submit</Button></Form.Item>
                     </Form>
             </Modal>

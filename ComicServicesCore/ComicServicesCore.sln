@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComicServicesCore", "ComicServicesCore\ComicServicesCore.csproj", "{F22E79ED-B523-4E35-8948-C1EC961C902B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComicDataAccess", "ComicDataAccess\ComicDataAccess.csproj", "{6F0EF3A5-28A6-4CAD-941C-D9BA4AF85C73}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F22E79ED-B523-4E35-8948-C1EC961C902B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F22E79ED-B523-4E35-8948-C1EC961C902B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F22E79ED-B523-4E35-8948-C1EC961C902B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F22E79ED-B523-4E35-8948-C1EC961C902B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F0EF3A5-28A6-4CAD-941C-D9BA4AF85C73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F0EF3A5-28A6-4CAD-941C-D9BA4AF85C73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F0EF3A5-28A6-4CAD-941C-D9BA4AF85C73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F0EF3A5-28A6-4CAD-941C-D9BA4AF85C73}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {35738B4F-B8A0-4013-A44D-05DE0897F9E3}
+	EndGlobalSection
+EndGlobal
